@@ -1,0 +1,44 @@
+/* Responsive Mobile et Tablette */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 20px;
+    }
+    
+    .nav-links {
+        gap: 20px;
+    }
+    
+    section {
+        padding: 60px 20px;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact {
+        padding: 40px 20px;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-form {
+        max-width: 320px;
+        padding: 16px 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    .testimonial-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .testimonial {
+        max-width: 95vw;
+        min-width: 0;
+    }
+}

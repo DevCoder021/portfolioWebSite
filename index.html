@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Créatif</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="CSS/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><img src="logoAD.jpg" alt="Logo AD" class="logo-img">Auriole Dion</div>
+            <div class="nav-links">
+                <a href="#home">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#work">Projets</a>
+                <a href="#gallery">Galerie</a>
+                <a href="#testimonials">Témoignages</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>Dion Kelly Jovien Auriole</h1>
+            <p>Développeur Web • Designer Graphique • Producteur Musical</p>
+            <div style="margin-bottom: 30px; font-style: italic; opacity: 0.9; animation: slideUp 1s ease-out 0.5s both;">
+                <i>"Coder avec passion, concevoir avec précision"</i>
+            </div>
+            <a href="#work" class="cta-button">Découvrir mes créations</a>
+        </div>
+    </section>
+
+     <section id="about" class="about fade-in">
+        <h2 class="section-title zoom-in">
+            <i class="fas fa-user-astronaut"></i> À propos de moi
+        </h2>
+        <p>
+            Passionné par le design d’interfaces et le développement web, je crée des expériences numériques fluides et esthétiques, accessibles à tous. Fort d’une solide expertise en développement full-stack et en design UI/UX, j’allie rigueur et créativité pour concevoir des projets sur mesure. Autodidacte, curieux et motivé, j’explore sans cesse de nouvelles technologies pour offrir le meilleur à mes clients.
+        </p>
+        <a href="./ASSETS/DOCUMENTS/MonCV.pdf" class="btn-cv" target="_blank" download="MonCV.pdf">
+            <i class="fas fa-download"></i> Télécharger mon CV
+        </a>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title zoom-in">Mes Compétences</h2>
+        <p>Voici un aperçu des technologies et outils avec lesquels je travaille :</p>
+        <div class="skills-tags">
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/html.png" alt="HTML5" class="skill-icon"> HTML5
+            </span>
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/css.png" alt="CSS3" class="skill-icon"> CSS3
+            </span>
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/javascript.png" alt="JavaScript" class="skill-icon"> JavaScript
+            </span>
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/php.png" alt="PHP" class="skill-icon"> PHP
+            </span>
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/mysql.png" alt="MySQL" class="skill-icon"> MySQL
+            </span>
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/python.png" alt="Python" class="skill-icon"> Python
+            </span>
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/react-js.png" alt="React" class="skill-icon"> React
+            </span>
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/vue-js.png" alt="Vue.js" class="skill-icon"> Vue.js
+            </span>
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/node-js.png" alt="Node.js" class="skill-icon"> Node.js
+            </span>
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/bootstrap.png" alt="Bootstrap" class="skill-icon"> Bootstrap
+            </span>
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS\tailwind-css.png" alt="Tailwind CSS" class="skill-icon"> Tailwind
+            </span>
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/git.png" alt="Git" class="skill-icon"> Git
+            </span>
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/figma.png" alt="Figma" class="skill-icon"> Figma
+            </span>
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/framer.png" alt="framer" class="skill-icon"> Framer
+            </span>
+            <span class="skill-tag">
+                <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/ia.png" alt="IA" class="skill-icon"> Intelligence Artificielle
+            </span>
+        </div>
+    </section>
+
+    <section id="work" class="portfolio-section">
+        <h2 class="section-title zoom-in">Mes Réalisations</h2>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <div class="portfolio-image"><img src="Capture d’écran (65).png" alt="ChristianMeet"></div>
+                <div class="portfolio-content">
+                    <h3>ChristianMeet</h3>
+                    <p>Site de rencontre développé en full-stack avec système d'authentification sécurisé, messagerie en temps réel et système de matching intelligent. Interface responsive et intuitive. En cours de conception ...</p>
+                    <div class="tech-stack">
+                        <span class="skill-tag">
+                             <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/html.png" alt="HTML5" class="skill-icon"> HTML5
+                        </span>
+                        <span class="skill-tag">
+                            <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/css.png" alt="CSS3" class="skill-icon"> CSS3
+                        </span>
+                        <span class="skill-tag">
+                            <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/mysql.png" alt="MySQL" class="skill-icon"> MySQL
+                        </span>
+                        <span class="skill-tag">
+                            <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/javascript.png" alt="JavaScript" class="skill-icon"> JavaScript
+                        </span>
+                        <span class="skill-tag">
+                            <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/php.png" alt="PHP" class="skill-icon"> PHP
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">🍎</div>
+                <div class="portfolio-content">
+                    <h3>FruitShop</h3>
+                    <p>Site vitrine e-commerce de vente de fruits avec catalogue produits interactif, panier d'achat fonctionnel et interface utilisateur optimisée. Design responsive et expérience utilisateur soignée.</p>
+                    <div class="tech-stack">
+                        <span class="skill-tag">
+                             <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/html.png" alt="HTML5" class="skill-icon"> HTML5
+                        </span>
+                        <span class="skill-tag">
+                             <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/css.png" alt="CSS3" class="skill-icon"> CSS3
+                        </span>
+                        <span class="skill-tag">
+                             <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/javascript.png" alt="JavaScript" class="skill-icon"> JavaScript
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">🎵</div>
+                <div class="portfolio-content">
+                    <h3>Productions Musicales</h3>
+                    <p>Créations musicales personnelles et projets collaboratifs. Exploration de différents genres et techniques de production moderne.</p>
+                    <div class="audio-player">
+                        <div class="audio-controls">
+                            <button class="play-button">▶</button>
+                            <div class="track-info">
+                                <div class="track-title">Création Originale</div>
+                                <div class="track-progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="skill-tag">
+                             <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/fl-studio.png" alt="FL Studio" class="skill-icon"> FL Studio
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">📚</div>
+                <div class="portfolio-content">
+                    <h3>Projets d'Apprentissage</h3>
+                    <p>Projets en cours de développement utilisant Python, Node.js et Tailwind CSS. Exploration des nouvelles technologies et frameworks modernes.</p>
+                    <div class="tech-stack">
+                        <span class="skill-tag">
+                            <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/python.png" alt="Python" class="skill-icon"> Python
+                        </span>
+                        <span class="skill-tag">
+                            <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/node-js.png" alt="Node.js" class="skill-icon"> Node.js
+                        </span>
+                        <span class="skill-tag">
+                            <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/tailwind-css.png" alt="Tailwind CSS" class="skill-icon"> Tailwind CSS
+                        </span>
+                        <span class="skill-tag">
+                            <img src="ASSETS/IMAGES/UI/ICONS/SKILL-ICONS/git.png" alt="Git" class="skill-icon"> Git
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-coverflow">
+        <h2 class="section-title zoom-in">Gallerie de projets</h2>
+        <div class="coverflow-slider">
+            <button class="coverflow-arrow prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="coverflow-track">
+                <div class="coverflow-slide"><img src="ASSETS/IMAGES/PORTFOLIO/DESIGN/1abf467d186edb1b50639b56d0422226.jpg" alt=""></div>
+                <div class="coverflow-slide"><img src="ASSETS/IMAGES/PORTFOLIO/DESIGN/1ebe2bfa41cd1c5bf0a506f1e28e5b80.jpg" alt=""></div>
+                <div class="coverflow-slide"><img src="ASSETS/IMAGES/PORTFOLIO/DESIGN/3b5ba10b4aa220d79ca35473fdec002f.jpg" alt=""></div>
+                <div class="coverflow-slide"><img src="ASSETS/IMAGES/PORTFOLIO/DESIGN/3d product design, 3d model, 3d render - Kens Studio.jpeg" alt=""></div>
+                <div class="coverflow-slide"><img src="ASSETS/IMAGES/PORTFOLIO/DESIGN/5e68dfd9c82708fcf8e4659ca8459956.jpg" alt=""></div>
+            </div>
+            <button class="coverflow-arrow next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- temoignages -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="header">
+            <h1>Témoignages Clients</h1>
+            <p>Découvrez ce que nos clients disent de nos services</p>
+        </div>
+
+        <div class="content">
+            <button class="add-comment-btn" onclick="toggleForm()">
+                Ajouter un commentaire
+            </button>
+
+            <div class="thank-you-message" id="thankYouMessage">
+                Merci ! Votre témoignage a été ajouté avec succès.
+            </div>
+
+            <div class="form-container" id="commentForm">
+                <h3 style="margin-bottom: 20px; color: #374151;">Partagez votre expérience</h3>
+                <form onsubmit="submitComment(event)">
+                    <div class="form-group">
+                        <label for="clientName">Votre nom *</label>
+                        <input type="text" id="clientName" name="clientName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="clientComment">Votre commentaire *</label>
+                        <textarea id="clientComment" name="clientComment" placeholder="Partagez votre expérience avec nous..." required></textarea>
+                    </div>
+
+                    <div class="rating-container">
+                        <label class="rating-label">Votre évaluation *</label>
+                        <div class="stars" id="starRating">
+                            <span class="star" data-rating="1">★</span>
+                            <span class="star" data-rating="2">★</span>
+                            <span class="star" data-rating="3">★</span>
+                            <span class="star" data-rating="4">★</span>
+                            <span class="star" data-rating="5">★</span>
+                        </div>
+                        <input type="hidden" id="selectedRating" name="rating" value="0">
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="button" class="btn btn-cancel" onclick="cancelForm()">Annuler</button>
+                        <button type="submit" class="btn btn-submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="testimonials-grid" id="testimonialsGrid">
+                <!-- Témoignages existants -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">Marie Dubois</div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                    <div class="testimonial-text">
+                        "Service exceptionnel ! L'équipe a été très professionnelle et à l'écoute de nos besoins. Je recommande vivement leurs services."
+                    </div>
+                    <div class="testimonial-date">15 juillet 2025</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">Pierre Martin</div>
+                        <div class="testimonial-stars">★★★★☆</div>
+                    </div>
+                    <div class="testimonial-text">
+                        "Très satisfait de la prestation. Délais respectés et qualité au rendez-vous. Une petite amélioration sur la communication serait parfaite."
+                    </div>
+                    <div class="testimonial-date">12 juillet 2025</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">Sophie Laurent</div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                    <div class="testimonial-text">
+                        "Absolument parfait ! Résultats au-delà de mes attentes. Je ferai à nouveau appel à leurs services sans hésitation."
+                    </div>
+                    <div class="testimonial-date">10 juillet 2025</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <h2 class="section-title zoom-in">Contactez-moi</h2>
+        <p class="slide-left">
+            Un projet, une question ou une collaboration ? Envoyez-moi un message et je vous répondrai rapidement.
+        </p>
+        <form class="contact-form slide-right" action="#" method="POST">
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Nom complet</label>
+                <input type="text" id="name" name="name" required placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" id="email" name="email" required placeholder="Votre email">
+            </div>
+            <div class="form-group">
+                <label for="subject"><i class="fas fa-tag"></i> Sujet</label>
+                <input type="text" id="subject" name="subject" required placeholder="Sujet du message">
+            </div>
+            <div class="form-group">
+                <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Votre message"></textarea>
+            </div>
+            <button type="submit" class="contact-btn">
+                <i class="fas fa-paper-plane"></i> Envoyer
+            </button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Auriole Dion. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/auriole-dion" target="_blank">LinkedIn</a>
+                <a href="https://github.com/aurioledion" target="_blank">GitHub</a>
+                <a href="https://twitter.com/aurioledion" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <script src="JS/main.js"></script>
+    <script src="JS/animation.js"></script>
+    <script src="JS/particles.js"></script>
+    <script src="JS/audio-player.js"></script>
+</body>
+</html>
