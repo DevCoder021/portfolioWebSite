@@ -1,38 +1,146 @@
-# Portfolio Créatif - Auriole Dion
+# Portfolio Backend API
 
-## Améliorations de l'arrière-plan du Hero
+Backend Node.js avec Express pour un portfolio personnel.
 
-Ce projet a été amélioré avec un arrière-plan dynamique et interactif pour la section hero. Voici les principales fonctionnalités ajoutées :
+## 🚀 Fonctionnalités
 
-### 1. Arrière-plan SVG personnalisé
+- **Gestion des projets** : CRUD complet pour les projets du portfolio
+- **Système de contact** : Réception et gestion des messages de contact
+- **Architecture MVC** : Structure claire et maintenable
+- **Données simulées** : Stockage en fichiers JSON (pas de base de données)
+- **API RESTful** : Endpoints bien structurés avec réponses JSON
 
-Un arrière-plan SVG moderne a été créé avec :
-- Une grille de points pour donner de la profondeur
-- Des cercles de gradient aux couleurs du site (vert #00ff88 et bleu #00d4ff)
-- Des lignes abstraites pour un effet tech
-- Des particules brillantes pour plus de dynamisme
+## 📋 Endpoints API
 
-### 2. Effet de parallaxe
+### Projets
 
-L'arrière-plan réagit maintenant aux mouvements de la souris avec un effet de parallaxe léger :
-- Le fond se déplace légèrement en fonction de la position du curseur
-- Une transition fluide a été ajoutée pour un mouvement naturel
+- `GET /api/projects` - Récupérer tous les projets
+  - Query params: `?category=web&status=terminé&featured=true`
+- `GET /api/projects/:id` - Récupérer un projet par ID
+- `POST /api/projects` - Créer un nouveau projet
+- `PUT /api/projects/:id` - Mettre à jour un projet
+- `DELETE /api/projects/:id` - Supprimer un projet
 
-### 3. Système de particules animées
+### Contact
 
-Des particules animées ont été ajoutées pour rendre l'arrière-plan plus vivant :
-- Particules de différentes tailles et couleurs
-- Animation de flottement aléatoire
-- Mouvement continu pour un effet dynamique
+- `POST /api/contact` - Envoyer un message de contact
+- `GET /api/contact/messages` - Récupérer tous les messages (admin)
+  - Query params: `?status=nouveau&limit=10`
+- `PUT /api/contact/messages/:id/read` - Marquer un message comme lu
 
-## Structure des fichiers
+## 🛠️ Installation
 
-- `ASSETS/IMAGES/BACKGROUND/hero-bg.svg` - Nouvel arrière-plan SVG
-- `CSS/main.css` - Mise à jour des styles de l'arrière-plan
-- `CSS/animation.css` - Ajout d'animations pour les particules
-- `JS/animation.js` - Ajout de l'effet de parallaxe
-- `JS/particles.js` - Nouveau système de particules
+```bash
+# Installer les dépendances
+npm install
 
-## Comment utiliser
+# Démarrer le serveur en mode développement
+npm run dev
 
-Le site est prêt à être utilisé. L'arrière-plan du hero est maintenant plus dynamique et interactif, offrant une meilleure expérience utilisateur dès l'arrivée sur le site.
+# Démarrer le serveur en mode production
+npm start
+```
+
+## 📁 Structure du projet
+
+```
+├── server.js              # Point d'entrée de l'application
+├── controllers/            # Logique métier
+│   ├── projectController.js
+│   └── contactController.js
+├── routes/                 # Définition des routes
+│   ├── projectRoutes.js
+│   └── contactRoutes.js
+├── data/                   # Données simulées (JSON)
+│   ├── projects.json
+│   └── messages.json
+└── public/                 # Fichiers statiques (optionnel)
+```
+
+## 📝 Exemples d'utilisation
+
+### Récupérer tous les projets
+
+```bash
+curl http://localhost:3000/api/projects
+```
+
+### Ajouter un nouveau projet
+
+```bash
+curl -X POST http://localhost:3000/api/projects \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Mon Nouveau Projet",
+    "description": "Description du projet",
+    "technologies": ["React", "Node.js"],
+    "category": "Web Development",
+    "status": "En cours",
+    "featured": true
+  }'
+```
+
+### Envoyer un message de contact
+
+```bash
+curl -X POST http://localhost:3000/api/contact \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "John Doe",
+    "email": "john@example.com",
+    "subject": "Demande de collaboration",
+    "message": "Bonjour, je souhaiterais discuter d'un projet..."
+  }'
+```
+
+## 🔧 Configuration
+
+Le serveur démarre par défaut sur le port 3000. Vous pouvez modifier le port en définissant la variable d'environnement `PORT`.
+
+```bash
+PORT=8000 npm start
+```
+
+## 📊 Format des données
+
+### Projet
+
+```json
+{
+  "id": 1,
+  "title": "Nom du projet",
+  "description": "Description détaillée",
+  "technologies": ["HTML5", "CSS3", "JavaScript"],
+  "image": "image.jpg",
+  "status": "Terminé",
+  "category": "Web Development",
+  "github": "https://github.com/user/repo",
+  "demo": "https://demo.com",
+  "createdAt": "2024-01-15",
+  "featured": true
+}
+```
+
+### Message de contact
+
+```json
+{
+  "id": 1,
+  "name": "John Doe",
+  "email": "john@example.com",
+  "subject": "Sujet du message",
+  "message": "Contenu du message",
+  "createdAt": "2024-01-15T10:30:00.000Z",
+  "status": "nouveau",
+  "ipAddress": "192.168.1.1"
+}
+```
+
+## 🚀 Prochaines étapes
+
+- Intégration d'une base de données (MongoDB, PostgreSQL)
+- Authentification et autorisation
+- Upload de fichiers pour les images de projets
+- Envoi d'emails automatiques pour les messages de contact
+- Tests unitaires et d'intégration
+- Documentation API avec Swagger

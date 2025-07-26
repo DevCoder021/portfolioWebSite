@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "title": "ChristianMeet",
+        "description": "Site de rencontre développé en full-stack avec système d'authentification sécurisé, messagerie en temps réel et système de matching intelligent. Interface responsive et intuitive.",
+        "technologies": ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
+        "image": "Capture d'écran (65).png",
+        "status": "En cours",
+        "category": "Web Development",
+        "github": "https://github.com/aurioledion/christianmeet",
+        "demo": null,
+        "createdAt": "2024-01-15",
+        "featured": true
+    },
+    {
+        "id": 2,
+        "title": "FruitShop",
+        "description": "Site vitrine e-commerce de vente de fruits avec catalogue produits interactif, panier d'achat fonctionnel et interface utilisateur optimisée. Design responsive et expérience utilisateur soignée.",
+        "technologies": ["HTML5", "CSS3", "JavaScript"],
+        "image": "fruitshop.jpg",
+        "status": "Terminé",
+        "category": "E-commerce",
+        "github": "https://github.com/aurioledion/fruitshop",
+        "demo": "https://fruitshop-demo.com",
+        "createdAt": "2023-11-20",
+        "featured": true
+    },
+    {
+        "id": 3,
+        "title": "Productions Musicales",
+        "description": "Créations musicales personnelles et projets collaboratifs. Exploration de différents genres et techniques de production moderne.",
+        "technologies": ["FL Studio", "Audio Engineering"],
+        "image": "music-production.jpg",
+        "status": "En cours",
+        "category": "Music Production",
+        "github": null,
+        "demo": "https://soundcloud.com/aurioledion",
+        "createdAt": "2023-08-10",
+        "featured": false
+    },
+    {
+        "id": 4,
+        "title": "Portfolio Personnel",
+        "description": "Portfolio créatif développé avec des animations modernes, galerie interactive et système de témoignages. Design responsive et optimisé pour tous les appareils.",
+        "technologies": ["HTML5", "CSS3", "JavaScript", "Node.js"],
+        "image": "portfolio.jpg",
+        "status": "Terminé",
+        "category": "Web Development",
+        "github": "https://github.com/aurioledion/portfolio",
+        "demo": "https://aurioledion.com",
+        "createdAt": "2024-12-01",
+        "featured": true
+    },
+    {
+        "id": 5,
+        "title": "Projets d'Apprentissage",
+        "description": "Projets en cours de développement utilisant Python, Node.js et Tailwind CSS. Exploration des nouvelles technologies et frameworks modernes.",
+        "technologies": ["Python", "Node.js", "Tailwind CSS", "Git"],
+        "image": "learning-projects.jpg",
+        "status": "En cours",
+        "category": "Learning",
+        "github": "https://github.com/aurioledion/learning-projects",
+        "demo": null,
+        "createdAt": "2024-03-15",
+        "featured": false
+    }
+]
